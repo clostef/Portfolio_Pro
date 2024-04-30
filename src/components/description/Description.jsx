@@ -3,10 +3,10 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 export const Description = () => {
   return (
     <>
-      <div className="flex items-center gap-3 mt-20">
+      <div id="description" className="flex items-center gap-3 mt-20">
         <Avatar className="size-16">
-          <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
-          <AvatarFallback>CN</AvatarFallback>
+          <AvatarImage src="" alt="clovis stefanutti" />
+          <AvatarFallback className="bg-black text-white">CS</AvatarFallback>
         </Avatar>
         <h2 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0">
           Clovis Stefanutti

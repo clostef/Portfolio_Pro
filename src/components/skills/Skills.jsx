@@ -33,8 +33,8 @@ const skills = [
 export const Skills = () => {
   return (
     <>
-      <div className="flex gap-3 items-center">
-        <FileBadge2 />
+      <div id="compétences" className="flex gap-3 items-center">
+        <FileBadge2 className="size-8" />
         <h2 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0">
           Compétences
         </h2>

@@ -30,13 +30,13 @@ export const Header = () => {
           href="#"
           className="flex items-center gap-2 text-lg font-semibold md:text-base"
         >
-          <BriefcaseBusiness className="size-6" />
+          <BriefcaseBusiness className="size-8" />
           <span className="sr-only">Acme Inc</span>
         </a>
         {menuItems.map((item) => {
           return (
             <a
-              href={item.link}
+              href={`#${item.link}`}
               key={item.link}
               className="text-muted-foreground transition-colors hover:text-foreground"
             >
@@ -66,7 +66,7 @@ export const Header = () => {
               return (
                 <a
                   key={item.link}
-                  href={item.link}
+                  href={`#${item.link}`}
                   className="text-muted-foreground hover:text-foreground"
                 >
                   {item.name}

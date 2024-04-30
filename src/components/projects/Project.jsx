@@ -34,8 +34,8 @@ const projects = [
 export const Project = () => {
   return (
     <>
-      <div className="flex gap-3 items-center">
-        <FolderOpenDot />
+      <div id="projets" className="flex gap-3 items-center">
+        <FolderOpenDot className="size-8" />
         <h2 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0">
           Projets
         </h2>
@@ -47,9 +47,13 @@ export const Project = () => {
             <CarouselItem key={index}>
               <div className="p-1">
                 <Card className="relative">
-                  <img src={item.bgImg} alt="Image" class="w-full rounded-lg" />
-                  <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
-                    <h1 class="text-white text-4xl font-bold pb-2">
+                  <img
+                    src={item.bgImg}
+                    alt="Image"
+                    className="w-full rounded-lg"
+                  />
+                  <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+                    <h1 className="text-white text-4xl font-bold pb-2">
                       {item.techno}
                     </h1>
                     <a
